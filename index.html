@@ -2,20 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GEOG370 Homework 4 by Amelia Loeffler </title>
+    <title>GEOG370 Homework 3 by Amelia Loeffler
+    </title>
 </head>
-<body> 
-<h1>GEOG370 Homework 4 by Amelia Loeffler</h1>
-<h2>For this homework I georeferenced an aerial image of UNC using a high resolution ortho image. I did this using six ground control points. </h2>
-
-    <h2 style="color:purple ;"> I chose an image that depicts a track and some of the UNC athletic facilites, and although there is not much change over time, you can see where some storage facilities have been moved to make room for a new field.
-<a href="./Homework #4 PNG Map.png">
-<img src="./Homework #4 PNG Map.png" width="1000"">
-
-<a href="https://opendata-townofchapelhill.hub.arcgis.com/datasets/bike-map-lines/about">Link to Vector from Internet</a>
-
-
 <body>
+    <h1> For this homework, I displayed the world map in nine different projections. I used WGS84, the Aitoff Projection, EPSG: 3857, 53018, 54034, 54027, and 102016. Then, I chose the Bonne Projection and the Eckert II Projection for my additional two projections. Some projections are equal area projections, meaning they keep relative size accurate throughout the map. Some projections are equidistant, meaning they keep distance scale along lines on the map.     </h1>
+    
+    <h2 style="color:blueviolet"> The Earth is a a three dimensional object, so all two dimensional maps have distortion in at least one of the following categories: shape, area, distance, and direction. No projection is perfect, so for this homework assignment, I looked at different world projections to see how they exhibited distortion of the Earth's surface.   </h2>
+    <p> In order to display the map in different projections using QGIS, I first downloaded the data and map files. Then, using QGIS I changed the projections. </p>
+    
+    <h2>WGS84 Projection</h2>
+    <h3>My observations:  This projection has distortion of area and shape at the poles, while the areas nearest the equator have the least distortion.  </h3>
+    <a href=".//maps/WGS84 Projection 2.png">
+    <img src=".//maps/WGS84 Projection 2.png" alt="WGS84" width='500px'>
+    </a>
+    <h2>Aitoff Projection</h2>
+    <h3>My observations: This projection is a "compromise" projection, meaning it is not equal area or equal distance. This projection shows distortion of shape, area, distance and direction.   </h3>
+    <a href=".//maps/Aitoff Projection.png">
+    <img src=".//maps/Aitoff Projection.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>Pseudo-Mercator Projection</h2>
+    <h3>My observations: This map shows the true shape of countries, but has distortion of area, esspecially near the poles. An example can be seen in Greenland, which has an exaggerated area. However, there is not distortion of direction.  </h3>
+    <a href=".//maps/Pseudo Mercator Projection 2.png">
+    <img src=".//maps/Pseudo Mercator Projection 2.png" alt="Pseudo-Mercator" width='500px'>
+    </a>  
+    <h2>Winkel Projection</h2>
+    <h3>My observations:  This projection is also a "compromise" and has distortion of shape, area and direction. This projection is better for world maps than small scale/local maps. 
+    <a href="maps/Winkel Projection.png">
+    <img src=".//maps/Winkel Projection.png" alt="Winkel" width='500px'>
+    </a>
+    <h2>Equal Area Cylindrical Projection</h2>
+    <h3>My observations: This is an equal area projection. It does have distortion of shape, area and direction. The distortion increases as the distance from the equator increases. 
+    <a href=".//maps/Equal Area Cylindrical Projection 2.png">
+    <img src=".//maps/Equal Area Cylindrical Projection 2.png" alt="Equal Area Cylindrical" width='500px'>
+    </a>
+    <h2>Equidistant Conic Projection</h2>
+    <h3>My observations:  Since this is a conic projection, it uses standard parallels. So, distortion of shape and area increases as distance from the standard parallels increases. 
+    <a href=".//maps/Equidistant Conic Projection 2.png">
+    <img src=".//maps/Equidistant Conic Projection 2.png" alt="Equidistant Conic" width='500px'>
+    </a>
+    <h2>North Pole Azimuthal Equidistant Projection</h2>
+    <h3>My observations:  In this projection, the distortion of shape and area increases as distance from the center point increases.  
+    <a href=".//maps/North Pole Azimuthal Equidistant Projection 2.png">
+    <img src=".//maps/North Pole Azimuthal Equidistant Projection 2.png" alt="North Pole Azimuthal" width='500px'>
+    </a>
+    <h2>Bonne Projection</h2>
+    <h3>My observations:  I chose this projection because it is almost heart-shaped. The Bonne projection  equal-area but has distortion of direction, distance, angles and shapes.  
+    <a href=".//maps/Bonne Projection 2.png">
+    <img src="./maps/Bonne Projection 2.png" alt="Bonne" width='500px'>
+    </a>
+    <h2>Eckert II Projection</h2>
+    <h3>My observations:  I chose this projection because of its sharp angles. The shape of this map is very unusual, as most maps have rounded, more natural seeming edges. This map is an equal-area projection but has distortion of direction, distance, angles and shapes.  
+    <a href=".//maps/World Eckert Projection.png">
+    <img src="./maps/World Eckert Projection.png" alt="Eckert" width='500px'>
+    </a>
+
+
+    <h2>Data used for this project</h2>
+    <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEOG370 Homework 3 by Amelia Loeffler
+    </title>
+</head>
+<body>
+    
+    <h2 style="color:blueviolet"> For this homework I georeferenced an aerial image of UNC using a high resolution ortho image. I did this using six ground control points.   </h2>
+    <p> I chose an image that depicts a track and some of the UNC athletic facilities, and although there is not much change over time, you can see where some storage facilities have been moved to make room for a new field.
+    </p>
+    
+    <h2>PNG MAP</h2>
+    <h3>  </h3>
+    <a href="./Homework #4 PNG Map.png">
+    <img src="./Homework #4 PNG Map.png" alt="Homework 4 Map" width='500px'>
+ 
+</body>
 </html>
